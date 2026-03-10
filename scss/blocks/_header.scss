@@ -1,0 +1,403 @@
+     .header {
+         &__container {
+             padding-top: 22px;
+             padding-bottom: 22px;
+             @include df-row-between-center;
+         }
+
+         &__test-button {
+             display: none;
+             opacity: 0;
+             border: none;
+             background: none;
+             outline: none;
+         }
+
+         &__test-button-image {
+             width: 20px;
+             height: 16px;
+         }
+
+         &__left-box {
+             @include df-row-center-center;
+             gap: 58.18px;
+         }
+
+         &__logo-link {
+             transition: 450ms ease all;
+
+             &:active {
+                 transition: 450ms ease all;
+                 opacity: 0.5px;
+             }
+         }
+
+         &__logo-image {}
+
+         &__list {
+             @include df-row-center-center;
+             gap: 32px;
+         }
+
+         &__lists {}
+
+         &__links {}
+
+         &__links-texts {
+             font-family: 'Space Mono';
+             font-weight: bold;
+             font-size: 15px;
+             line-height: 25px;
+             letter-spacing: 0px;
+             color: $dim__grey;
+         }
+
+         &__button {
+             display: block;
+             @include template__button;
+         }
+
+         &__mb-buttons-box {
+             display: none;
+         }
+
+         &__mb-open-burger-button {
+             display: block;
+             border: none;
+             background: none;
+             outline: none;
+         }
+
+         &__mb-open-burger-icon {
+             width: 20px;
+             height: 16px;
+         }
+
+         &__mb-close-burger-button {
+             display: none;
+             border: none;
+             background: none;
+             outline: none;
+         }
+
+         &__mb-close-burger-icon {
+             width: 20px;
+             height: 16px;
+         }
+
+         &__mb-div {
+             display: none;
+             transition: 450ms ease all;
+             width: 100%;
+             z-index: -1;
+             height: 100dvh;
+             position: fixed;
+             top: 73px;
+             transform: translateX(-100%);
+             backdrop-filter: blur(5px);
+             background-color: rgba(0, 0, 0, 0.5);
+         }
+
+         &__mb-div.active {
+             transform: translateX(0%);
+             transition: 450ms ease all;
+         }
+
+         &__mb-nav {
+             @include df-column-between-start;
+             background-color: $second__dark__novvy ;
+             width: 80%;
+             height: 100dvh;
+             padding: 64px 32px 102px 32px;
+         }
+
+         &__mb-list {
+             @include df-column-between-start;
+             gap: 24px;
+         }
+
+         &__lists {}
+
+         &__mb-links {}
+
+         &__mb-links-texts {
+             font-family: 'Space Mono';
+             font-weight: bold;
+             font-size: 18px;
+             line-height: 25px;
+             letter-spacing: 0px;
+             color: $white;
+         }
+
+         &__mb-button {
+             @include template__button;
+         }
+     }
+
+     @media(max-width:1024px) {
+         .header {
+             &__container {
+                 padding-left: 40px;
+                 padding-right: 40px;
+                 padding-top: 22px;
+                 padding-bottom: 22px;
+                 @include df-row-between-center;
+             }
+
+             &__test-button {
+                 display: none;
+                 opacity: 0;
+                 border: none;
+                 background: none;
+                 outline: none;
+             }
+
+             &__test-button-image {
+                 width: 20px;
+                 height: 16px;
+             }
+
+             &__left-box {
+                 @include df-row-center-center;
+                 gap: 58.18px;
+             }
+
+             &__logo-link {}
+
+             &__logo-image {}
+
+             &__list {
+                 @include df-row-center-center;
+                 gap: 32px;
+             }
+
+             &__lists {}
+
+             &__links {}
+
+             &__links-texts {
+                 font-family: 'Space Mono';
+                 font-weight: bold;
+                 font-size: 15px;
+                 line-height: 25px;
+                 letter-spacing: 0px;
+                 color: $dim__grey;
+             }
+
+             &__button {
+                 display: block;
+                 @include template__button;
+             }
+
+             &__mb-buttons-box {
+                 display: none;
+             }
+
+             &__mb-open-burger-button {
+                 display: block;
+                 border: none;
+                 background: none;
+                 outline: none;
+             }
+
+             &__mb-open-burger-icon {
+                 width: 20px;
+                 height: 16px;
+             }
+
+             &__mb-close-burger-button {
+                 display: none;
+                 border: none;
+                 background: none;
+                 outline: none;
+             }
+
+             &__mb-close-burger-icon {
+                 width: 20px;
+                 height: 16px;
+             }
+
+             &__mb-div {
+                 display: none;
+                 transition: 450ms ease all;
+                 width: 100%;
+                 z-index: -1;
+                 height: 100dvh;
+                 position: fixed;
+                 top: 73px;
+                 transform: translateX(-100%);
+                 backdrop-filter: blur(5px);
+                 background-color: rgba(0, 0, 0, 0.5);
+             }
+
+             &__mb-div.active {
+                 transform: translateX(0%);
+                 transition: 450ms ease all;
+             }
+
+             &__mb-nav {
+                 @include df-column-between-start;
+                 background-color: $second__dark__novvy ;
+                 width: 80%;
+                 height: 100dvh;
+                 padding: 64px 32px 102px 32px;
+             }
+
+             &__mb-list {
+                 @include df-column-between-start;
+                 gap: 24px;
+             }
+
+             &__mb-lists {}
+
+             &__mb-links {}
+
+             &__mb-links-texts {
+                 font-family: 'Space Mono';
+                 font-weight: bold;
+                 font-size: 18px;
+                 line-height: 25px;
+                 letter-spacing: 0px;
+                 color: $white;
+             }
+
+             &__mb-button {
+                 @include template__button;
+             }
+         }
+     }
+
+     @media(max-width:767px) {
+         .header {
+             &__container {
+                 padding-left: 32px;
+                 padding-right: 32px;
+                 padding-top: 22px;
+                 padding-bottom: 22px;
+                 @include df-row-reverse-between-center;
+             }
+
+             &__test-button {
+                 display: block;
+                 opacity: 0;
+                 border: none;
+                 background: none;
+                 outline: none;
+             }
+
+             &__test-button-image {
+                 width: 20px;
+                 height: 16px;
+             }
+
+             &__left-box {}
+
+             &__logo-link {
+                 transition: 450ms ease all;
+
+                 &:active {
+                     transition: 450ms ease all;
+                     opacity: 0.5;
+                 }
+             }
+
+             &__logo-image {
+                 width: 75.5px;
+                 height: 20px;
+             }
+
+             &__list {
+                 display: none;
+             }
+
+             &__lists {
+                 display: none;
+             }
+
+             &__links {
+                 display: none;
+             }
+
+             &__links-texts {
+                 font-family: 'Space Mono';
+             }
+
+             &__button {
+                 display: none;
+             }
+
+             &__mb-buttons-box {
+                 display: block;
+             }
+
+             &__mb-open-burger-button {
+                 display: block;
+                 border: none;
+                 background: none;
+                 outline: none;
+             }
+
+             &__mb-open-burger-icon {
+                 width: 20px;
+                 height: 16px;
+             }
+
+             &__mb-close-burger-button {
+                 display: none;
+                 border: none;
+                 background: none;
+                 outline: none;
+             }
+
+             &__mb-close-burger-icon {
+                 width: 20px;
+                 height: 16px;
+             }
+
+             &__mb-div {
+                 display: block;
+                 transition: 450ms ease all;
+                 width: 100%;
+                 z-index: -1;
+                 height: 100dvh;
+                 position: fixed;
+                 top: 73px;
+                 transform: translateX(-100%);
+                 backdrop-filter: blur(5px);
+                 background-color: rgba(0, 0, 0, 0.5);
+             }
+
+             &__mb-div.active {
+                 transform: translateX(0%);
+                 transition: 450ms ease all;
+             }
+
+             &__mb-nav {
+                 @include df-column-between-start;
+                 background-color: $second__dark__novvy ;
+                 width: 80%;
+                 height: 100dvh;
+                 padding: 64px 32px 102px 32px;
+             }
+
+             &__mb-list {
+                 @include df-column-between-start;
+                 gap: 24px;
+             }
+
+             &__mb-links {}
+
+             &__mb-links-texts {
+                 font-family: 'Space Mono';
+                 font-weight: bold;
+                 font-size: 18px;
+                 line-height: 25px;
+                 letter-spacing: 0px;
+                 color: $white;
+             }
+
+             &__mb-button {
+                 @include template__button;
+             }
+         }
+     }
