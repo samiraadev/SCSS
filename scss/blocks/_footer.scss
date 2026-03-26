@@ -1,0 +1,190 @@
+ .footer {
+     background-color: $second__dark__novvy;
+
+     &__container {
+         padding-top: 32px;
+         padding-bottom: 32px;
+         @include df-row-between-center;
+     }
+
+     &__left-box {
+         @include df-row-center-center;
+         gap: 58.18px;
+     }
+
+     &__logo-link {
+         transition: 200ms ease all;
+
+         &:active {
+             opacity: 0.5;
+         }
+     }
+
+     &__list {
+         @include df-row-center-center;
+         gap: 32px;
+     }
+
+     &__links-texts {
+         font-family: 'Space Mono', ;
+         font-weight: bold;
+         font-size: 15px;
+         line-height: 25px;
+         color: $dim__grey;
+     }
+
+     &__right-icon-box {
+         @include df-row-center-center;
+         gap: 24px;
+     }
+
+     &__icon-link {
+         transition: 450ms ease all;
+
+         &:hover {
+             transform: translate(3px, -3px);
+             opacity: 0.5;
+             transition: 450ms ease all;
+         }
+     }
+
+     &__logo-image {
+         width: 107.82px;
+         height: 28.56px;
+
+     }
+
+
+     &__icon-image {
+         width: 24px;
+         height: 24px;
+     }
+ }
+
+ @media (max-width: 1024px) {
+     .footer {
+         background-color: $second__dark__novvy;
+
+         &__container {
+             padding-left: 40px;
+             padding-right: 40px;
+             padding-top: 32px;
+             padding-bottom: 32px;
+             @include df-row-between-center;
+         }
+
+         &__left-box {
+             @include df-row-center-center;
+             gap: 58.18px;
+         }
+
+         &__logo-link {
+             transition: 200ms ease all;
+
+             &:active {
+                 opacity: 0.5;
+             }
+         }
+
+         &__list {
+             @include df-row-center-center;
+             gap: 32px;
+         }
+
+         &__links-texts {
+             font-family: 'Space Mono', ;
+             font-weight: bold;
+             font-size: 15px;
+             line-height: 25px;
+             color: $dim__grey;
+         }
+
+         &__right-icon-box {
+             @include df-row-center-center;
+             gap: 24px;
+         }
+
+         &__icon-link {
+             transition: 200ms ease all;
+
+             &:active {
+                 opacity: 0.5;
+                 transition: 200ms ease all;
+             }
+         }
+
+         &__logo-image {
+             width: 107.82px;
+             height: 28.56px;
+
+         }
+
+
+         &__icon-image {
+             width: 24px;
+             height: 24px;
+         }
+     }
+ }
+
+ @media (max-width: 767px) {
+     .footer {
+         background-color: $second__dark__novvy;
+
+         &__container {
+             padding: 64px 32px 88px;
+             @include df-column-center-center;
+             gap: 85px;
+         }
+
+         &__left-box {
+             @include df-column-center-center;
+             gap: 41.44px;
+         }
+
+         &__logo-link {
+             transition: 200ms ease all;
+
+             &:active {
+                 opacity: 0.5;
+             }
+         }
+
+         &__logo-image {
+             width: 75.5px;
+             height: 20px;
+         }
+
+         &__list {
+             @include df-column-center-center;
+             gap: 16px;
+         }
+
+         &__links-texts {
+             font-family: 'Space Mono', ;
+             font-weight: bold;
+             font-size: 15px;
+             line-height: 25px;
+             color: $dim__grey;
+         }
+
+         &__right-icon-box {
+             @include df-row-center-center;
+             gap: 24px;
+         }
+
+         &__icon-link {
+             transition: 200ms ease all;
+
+             &:active {
+                 opacity: 0.5;
+                 transition: 200ms ease all;
+             }
+         }
+
+         &__icon-image {
+             width: 24px;
+             height: 24px;
+         }
+     }
+ }
