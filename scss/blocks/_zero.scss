@@ -1,7 +1,8 @@
- .zero { 
+ .zero {
      margin-top: 200px;
      position: relative;
      z-index: 2;
+
      &::after {
          position: absolute;
          content: "";
@@ -70,88 +71,10 @@
          height: 445px;
          border-radius: 50%;
      }
-  }
-@media(max-width:1100px) {
-     .zero {
-     margin-top: 120px;
-     position: relative;
-     z-index: 2;
-
-         &::after {
-             position: absolute;
-             content: "";
-             display: inline-block;
-             width: 355px;
-             height: 151px;
-             right: 0;
-               top:75px;
-             background-image: url("../../icons/zero__tb-vector.svg");
-             background-repeat: no-repeat;
-             background-size: cover;
-         }
-
-
-     &::before {
-         z-index: -1;
-         position: absolute;
-         content: "";
-         display: inline-block;
-         width: 95px;
-         height: 445px;
-         right: 0;
-         top: 0;
-         background-image: url("../../icons/easy__mask.svg");
-         background-repeat: no-repeat;
-         background-size: cover;
-     }
-
-     &__container {
-      @include df-column-reverse-center-center;
-             gap:64px;
-
-     }
-
-     &__left-box {
-        @include df-column-center-center;
-             gap: 40px;
-     }
-
-     &__title {
-           width: 457px;
-             font-family: 'Space Mono';
-             color: $dark__novy ;
-             font-size: 48px;
-             line-height: 48px;
-             letter-spacing: -2.14px;
-             font-weight: bold;
-             text-align: center;
-     }
-
-     &__text {
-        text-align: center;
-             width: 573px;
-             font-family: 'Lexend Deca';
-             font-weight: 400;
-             color: $dim__grey;
-             font-size: 15px;
-             line-height: 25px;
-             letter-spacing: 0;
-     }
-
-     &__button {
-         @include template__button;
-     }
-
-     &__image {
-         width: 445px;
-         height: 445px;
-         border-radius: 50%;
-     }
  }
 
-	}
- @media(max-width:1024px) {
-     .zero{
+ @media(max-width:1100px) {
+     .zero {
          margin-top: 120px;
          position: relative;
          z-index: 2;
@@ -163,7 +86,87 @@
              width: 355px;
              height: 151px;
              right: 0;
-             top:75px;
+             top: 75px;
+             background-image: url("../../icons/zero__tb-vector.svg");
+             background-repeat: no-repeat;
+             background-size: cover;
+         }
+
+
+         &::before {
+             z-index: -1;
+             position: absolute;
+             content: "";
+             display: inline-block;
+             width: 95px;
+             height: 445px;
+             right: 0;
+             top: 0;
+             background-image: url("../../icons/easy__mask.svg");
+             background-repeat: no-repeat;
+             background-size: cover;
+         }
+
+         &__container {
+             @include df-column-reverse-center-center;
+             gap: 64px;
+
+         }
+
+         &__left-box {
+             @include df-column-center-center;
+             gap: 40px;
+         }
+
+         &__title {
+             width: 457px;
+             font-family: 'Space Mono';
+             color: $dark__novy ;
+             font-size: 48px;
+             line-height: 48px;
+             letter-spacing: -2.14px;
+             font-weight: bold;
+             text-align: center;
+         }
+
+         &__text {
+             text-align: center;
+             width: 573px;
+             font-family: 'Lexend Deca';
+             font-weight: 400;
+             color: $dim__grey;
+             font-size: 15px;
+             line-height: 25px;
+             letter-spacing: 0;
+         }
+
+         &__button {
+             @include template__button;
+         }
+
+         &__image {
+             width: 445px;
+             height: 445px;
+             border-radius: 50%;
+         }
+     }
+
+ }
+
+ @media(max-width:1024px) {
+     .zero {
+         margin-top: 120px;
+         position: relative;
+         z-index: 2;
+
+         &::after {
+             position: absolute;
+             content: "";
+             display: inline-block;
+             width: 355px;
+             height: 151px;
+             right: 0;
+             top: 75px;
              background-image: url("../../icons/zero__tb-vector.svg");
              background-repeat: no-repeat;
              background-size: cover;
@@ -228,7 +231,8 @@
              border-radius: 50%;
          }
      }
-}
+ }
+
  @media(max-width:767px) {
      .zero {
          margin-top: 120px;

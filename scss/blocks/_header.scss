@@ -5,6 +5,7 @@
          width: 100%;
          top: 0;
          position: fixed;
+
          &__container {
              padding-top: 22px;
              padding-bottom: 22px;
@@ -173,16 +174,17 @@
              }
 
              &__logo-link {
-                transition: 200ms ease all;
-                &:active{
-                      transition: 200ms ease all;
-                      opacity: 0.5;
-                }
+                 transition: 200ms ease all;
+
+                 &:active {
+                     transition: 200ms ease all;
+                     opacity: 0.5;
+                 }
              }
 
              &__logo-image {
-                width: 107.82px;
-                height: 28.56px;
+                 width: 107.82px;
+                 height: 28.56px;
 
              }
 

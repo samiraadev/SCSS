@@ -72,11 +72,12 @@
          border-radius: 50%;
      }
  }
-@media(max-width:1100px){
+
+ @media(max-width:1100px) {
      .easy {
-     margin-top: 145px;
-     position: relative;
-     z-index: 2;
+         margin-top: 145px;
+         position: relative;
+         z-index: 2;
 
          &::after {
              position: absolute;
@@ -92,33 +93,33 @@
          }
 
 
-     &::before {
-         z-index: -1;
-         position: absolute;
-         content: "";
-         display: inline-block;
-         width: 95px;
-         height: 445px;
-         right: 0;
-         top: 0;
-         background-image: url("../../icons/easy__mask.svg");
-         background-repeat: no-repeat;
-         background-size: cover;
-     }
+         &::before {
+             z-index: -1;
+             position: absolute;
+             content: "";
+             display: inline-block;
+             width: 95px;
+             height: 445px;
+             right: 0;
+             top: 0;
+             background-image: url("../../icons/easy__mask.svg");
+             background-repeat: no-repeat;
+             background-size: cover;
+         }
 
-     &__container {
-      @include df-column-reverse-center-center;
+         &__container {
+             @include df-column-reverse-center-center;
              gap: 56px;
 
-     }
+         }
 
-     &__left-box {
-        @include df-column-center-center;
+         &__left-box {
+             @include df-column-center-center;
              gap: 40px;
-     }
+         }
 
-     &__title {
-           width: 457px;
+         &__title {
+             width: 457px;
              font-family: 'Space Mono';
              color: $dark__novy ;
              font-size: 48px;
@@ -126,10 +127,10 @@
              letter-spacing: -2.14px;
              font-weight: bold;
              text-align: center;
-     }
+         }
 
-     &__text {
-        text-align: center;
+         &__text {
+             text-align: center;
              width: 573px;
              font-family: 'Lexend Deca';
              font-weight: 400;
@@ -137,20 +138,21 @@
              font-size: 15px;
              line-height: 25px;
              letter-spacing: 0;
+         }
+
+         &__button {
+             @include template__button;
+         }
+
+         &__image {
+             width: 445px;
+             height: 445px;
+             border-radius: 50%;
+         }
      }
 
-     &__button {
-         @include template__button;
-     }
-
-     &__image {
-         width: 445px;
-         height: 445px;
-         border-radius: 50%;
-     }
  }
 
-}
  @media(max-width:1024px) {
      .easy {
          margin-top: 145px;
@@ -230,6 +232,7 @@
          }
      }
  }
+
  @media(max-width:767px) {
      .easy {
          margin-top: 120px;
